@@ -1,0 +1,79 @@
+﻿#rectangle {
+    left: 7px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+}
+
+#triangle {
+   left: 80px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+}
+
+#ellipse {
+    left: 155px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+}
+
+#hexagon {
+    left: 225px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+}
+
+#pentagon {
+    left: 290px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+}
+
+#line {
+    left: 355px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+}
+
+#text {
+    left: 425px;
+    position: absolute;
+    text-align: center;
+    top: 7px;
+}
+
+#image {
+    left: 500px;
+    position: absolute;
+    text-align: center;
+    top: 13px;
+}
+
+#printer {
+    left: 580px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+}
+
+#chair {
+    left: 650px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+}
+
+#content {
+    border: 2px solid red;
+    height: 55px;
+    width: 160px;
+    position: absolute;
+    top: 7px;
+    text-align: center;
+    left: 9px;
+}

@@ -1,0 +1,66 @@
+﻿#moveOne {
+    position: absolute;
+    top: 30%;
+    width: 90%;
+    left: 3%;
+}
+
+#moveAll {
+    position: absolute;
+    top: 40%;
+    width: 90%;
+    left: 3%;
+}
+
+#getOne {
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    left: 3%;
+}
+
+#getAll {
+    position: absolute;
+    top: 60%;
+    width: 90%;
+    left: 3%;
+}
+
+#notifyText {
+    height: 5%;
+    left: 42%;
+    position: absolute;
+    top: 92%;
+    width: 58%;
+}
+
+.menuItem {
+    padding-left: 24px;
+}
+
+.menuPlus {
+    background-image: url(../Images/plus.png);
+}
+
+.menuMinus {
+    background-image: url(../Images/minus.png);
+}
+
+.menuPlus, .menuMinus, .menuBlank {
+    vertical-align: middle;
+    border-style: none;
+    width: 24px;
+    height: 24px;
+}
+
+.menuBlank {
+}
+
+.menuLink {
+    color: black;
+    text-decoration: none;
+}
+
+.menuImage {
+    vertical-align: middle;
+}

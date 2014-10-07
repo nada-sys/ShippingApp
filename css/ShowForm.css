@@ -1,0 +1,343 @@
+﻿html, body {
+    width: 100%;
+    height: 85%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: auto;
+}
+
+body, select, input, textarea {
+    font-size: 9.5pt;
+    font-family: Arial, sans-serif, Tahoma;
+}
+
+#hdrTop {
+    background-color: #ffffff;
+    font-family: Arial,Tahoma,sans-serif;
+    height: 0%;
+    left: 0.7%;
+    padding: 2px 5px;
+    width: 99%;
+}
+
+#divSave {
+    float: right;
+}
+
+#centerContainer {
+    height: 611px;
+    margin: auto;
+    position: relative;
+    width: 1366px;
+    top: 9%;
+    background-color: gray;
+}
+
+#hdrShapes {
+    background-color: #b9c0c5;
+    border: 1px none black;
+    height: 84px;
+    left: 180px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: absolute;
+    top: 3px;
+    width: 1184px;
+}
+
+#hdrLeft {
+    background-color: #b9c0c5;
+    border: 1px none black;
+    height: 605px;
+    left: 2px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    top: 3px;
+    width: 175px;
+}
+
+.canvasBody {
+    background-color: #ffffff;
+    border: 1px solid white;
+    height: 517px;
+    left: 180px;
+    overflow: hidden;
+    position: absolute;
+    top: 89px;
+    width: 1182px;
+}
+
+.ResName {
+    font-size: 8pt;
+    left: 39px;
+    position: relative;
+    top: -33px;
+}
+
+.GridShow {
+    background-image: linear-gradient(0deg, transparent 24%, rgba(160, 160, 160, 1.00) 25%, rgba(160, 160, 160, 1.00) 26%, transparent 27%, transparent 74%, rgba(160, 160, 160, 1.00) 75%, rgba(160, 160, 160, 1.00) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(160, 160, 160, 1.00) 25%, rgba(160, 160, 160, 1.00) 26%, transparent 27%, transparent 74%, rgba(160, 160, 160, 1.00) 75%, rgba(160, 160, 160, 1.00) 76%, transparent 77%, transparent);
+    background-size: 50px 50px;
+}
+
+.GridHide {
+    background-image: none;
+    background-size: 50px 50px;
+}
+
+
+#wait {
+    display: none;
+    height: 15%;
+    left: 40%;
+    padding: 2px;
+    position: absolute;
+    top: 26%;
+    width: 10%;
+    z-index: 2000;
+}
+
+#shapeIndex a {
+}
+
+    #shapeIndex a:hover {
+        background-color: blue;
+        color: white;
+    }
+
+#treeViewLocation {
+    background-color: aliceblue;
+}
+
+#saveLocation {
+}
+
+#openLocation {
+}
+
+.menuHeader {
+    cursor: pointer;
+}
+
+#treeLeft {
+    border: 1px solid black;
+    float: left;
+    height: 80%;
+    left: 1%;
+    overflow-y: scroll;
+    position: absolute;
+    top: 8%;
+    width: 35%;
+}
+
+ul {
+    cursor: pointer;
+}
+
+#treeCenter {
+    border: 1px none black;
+    height: 80%;
+    left: 36%;
+    position: absolute;
+    top: 8%;
+    width: 20%;
+}
+
+#treeRight {
+    border: 1px solid black;
+    height: 80%;
+    left: 55%;
+    position: absolute;
+    top: 8%;
+    width: 35%;
+    overflow-y: scroll;
+}
+
+#treeBottom {
+    border: 1px none black;
+    height: 15%;
+    left: 1%;
+    position: absolute;
+    top: 90%;
+    width: 15%;
+}
+
+    #treeBottom span {
+        color: red;
+    }
+
+#magServerName span {
+    color: red;
+}
+
+#btnOk {
+    height: 62%;
+    width: 236%;
+}
+
+#mnuList, #check {
+    text-align: center;
+    background-color: #949494;
+    border: solid 1px #FFDEDE;
+    display: inherit;
+}
+
+#mnuList {
+    position: absolute;
+    padding: 5px;
+    height: 100px;
+    width: 90px;
+    display: none;
+    z-index: 1;
+}
+
+.toggleOn {
+    color: white;
+    background-color: #007acc;
+}
+
+.toggleOff {
+    color: sienna;
+    background-color: none;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#treeLeft li {
+    border: 1px none;
+    padding-left: 25px;
+}
+
+#mnuList, #check {
+    text-align: center;
+    background-color: #949494;
+    border: solid 1px #FFDEDE;
+    display: inherit;
+}
+
+#mnuList {
+    position: absolute;
+    padding: 5px;
+    height: 100px;
+    width: 90px;
+    display: none;
+    z-index: 1;
+}
+
+#draggable {
+    width: 100px;
+    height: 100px;
+    padding: 0.5em;
+    margin: 0 auto;
+}
+
+.white-popup {
+    margin: 1% auto;
+    max-width: 2%;
+    padding: 23%;
+    position: relative;
+    width: auto;
+}
+
+.white-popupOpen {
+    background-color: aliceblue;
+    margin: 3% auto;
+    max-width: 20%;
+    padding: 1%;
+    position: relative;
+    width: auto;
+}
+
+#divOpenLocation {
+    width: auto;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.white-popupSave {
+    position: relative;
+    background-color: aliceblue;
+    padding: 2%;
+    width: auto;
+    max-width: 24%;
+    margin: 3% auto;
+}
+
+.white-popupServer {
+    margin: 0 auto;
+    max-width: 20%;
+    padding: 2%;
+    position: relative;
+    width: auto;
+}
+
+label {
+    float: left;
+    width: 46%;
+}
+
+input[type="text"] {
+    background: #6b6b6b;
+    border: none;
+    margin: 1em;
+    padding: 5% 20%;
+    color: aliceblue;
+    font-size: 1.1em;
+    outline: none;
+    width: 50%;
+}
+
+#btnServerName {
+    margin-left: 10px;
+}
+
+
+#btnTestConnection {
+    margin-left: 20px;
+}
+
+#hdrTop input[type="button"] {
+    color: silver;
+    display: inline-block;
+    font-family: Arial,sans-serif,Tahoma;
+    font-size: 125%;
+    border: none;
+    cursor: pointer;
+    clear: both;
+    background: none;
+}
+
+    #hdrTop input[type="button"]:hover {
+        color: #014e82;
+    }
+
+input[type="button"] {
+    display: inline-block;
+    font-family: Arial,sans-serif,Tahoma;
+    font-size: 9.5pt;
+    /*padding: 10px;*/
+    border: 2px solid;
+    border-color: #014e82;
+    cursor: pointer;
+}
+
+    input[type="button"]:hover {
+        color: #014e82;
+    }
+
+#treeCenter input[type="button"] {
+    font-size: 100%;
+}
+
+#btnImageUpload {
+    left: 1%;
+    position: relative;
+    top: 20%;
+}

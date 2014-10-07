@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script src="js/raphael.js"></script>
+    <script src="js/raphael.free_transform.js"></script>
+    <script src="js/Loadshapes.js"></script>
+    <script src="js/json2.js"></script>
+    <title></title>
+    <style>
+        #draggable {
+            width: 150px;
+            height: 150px;
+            padding: 0.5em;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var undo = [];
+            var paper = Raphael("draggable"), x, y,
+                rect = paper.rect(50, 50, 50, 50).transform("R0,35,35S0.7,0.7,35,35T-10.5,9.5").attr({ fill: 'red' }),
+                rect1 = paper.rect(50, 50, 50, 50).transform("R0,35,35S0.7,0.7,35,35T-10.5,9.5").attr({ fill: 'red' }),
+                set = paper.set();
+            set.push(rect, rect1);
+            var ft1 = paper.freeTransform(set, function (ft, eve) {
+            });
+
+            var rect = paper.rect(50, 50, 50, 50).transform("R0,35,35S0.7,0.7,35,35T-10.5,9.5").attr({ fill: 'red' }),
+                rect1 = paper.rect(50, 50, 50, 50).transform("R0,35,35S0.7,0.7,35,35T-10.5,9.5").attr({ fill: 'red' }),
+                set = paper.set();
+            set.push(rect, rect1);
+            var ft2 = paper.freeTransform(set, function (ft, eve) {
+            });
+
+            $('#btnShow').click(function () {
+                if (ft1.attrs == ft2.attrs)
+                    alert("true");
+            });
+
+            $('#Submit1').click(function () {
+
+
+            });
+
+        });
+
+    </script>
+
+</head>
+<body>
+    <div id="draggable" style="height: 300px; width: 1000px;">
+    </div>
+    <input type="submit" id="btnShow" style="height: 50px; width: 50px; background-color: red;" />
+    <input type="submit" id="Submit1" style="height: 50px; width: 50px; background-color: red;" />
+</body>
+</html>
